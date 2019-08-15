@@ -1,0 +1,158 @@
+//  Setup
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+//Global
+body {
+    background:
+        url("~@/assets/images/primary_bg.png") repeat top left,
+        linear-gradient((180deg,
+                rgba(75, 97, 154, .55) 0%,
+                rgba(75, 97, 154, .45) 100%)), ;
+    background-size: 250px;
+    font-family: futura-pt, sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-holder {
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+.grecaptcha-badge {
+    display: none;
+}
+
+// Vars
+
+$mainC :#3F61BB;
+$contrastC: #c34223;
+
+// Typefaces
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: filson-soft, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p,
+i,
+li {
+    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    list-style: none;
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+
+    &.bigger {
+        margin-top: 15px;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+i,
+span {
+    &.left {
+        text-align: left;
+
+        & li {
+            text-align: left;
+        }
+    }
+
+    &.center {
+        text-align: center;
+
+        & li {
+            text-align: center;
+        }
+    }
+
+    &.right {
+        text-align: right;
+
+        & li {
+            text-align: right;
+        }
+    }
+
+    &.italic {
+        font-style: italic;
+    }
+
+    &.bold {
+        font-weight: 800;
+    }
+
+    &.blue {
+        color: $mainC;
+    }
+
+    &.white {
+        color: white;
+    }
+
+    &.accentOff {
+        color: #3CC2D0;
+    }
+
+    &.txt {
+        margin-top: 30px;
+    }
+
+    &.shadow {
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &.upcase {
+        text-transform: capitalize;
+    }
+}
+
+.red {
+    color: $contrastC;
+}
+
+.template-header {
+    margin-bottom: 30px;
+}

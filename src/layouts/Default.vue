@@ -1,10 +1,12 @@
 <template>
-  <div class="layout">
-    <Header />
-    <div class="page-container">
-      <slot />
+  <div class="frame">
+    <div class="layout">
+      <Header />
+      <div class="page-container">
+        <slot />
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -23,18 +25,28 @@ export default {
 </script>
 
 <style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
+.frame {
+  width: 100vw;
+  padding: 30px;
+  padding-bottom: 0;
 }
-
 .layout {
-  max-width: 1920px;
-  margin: 0 auto;
+  /* height: calc(100% + 400px); */
+  width: 100%;
+  max-width: 1900px;
   padding-left: 20px;
   padding-right: 20px;
+  background: url("~@/assets/images/page_bg1.png") repeat top left;
+  background-size: 400px;
+  background-color: rgb(245, 232, 216);
+  margin-top: 30px;
+  padding: 60px 30px 360px 30px;
+  /* padding: 60px 30px; */
+  border-radius: 50px 50px 0 0;
+
+  -webkit-box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
 }
 </style>
+

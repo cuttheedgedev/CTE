@@ -1,12 +1,11 @@
 <template>
   <layout>
     <div class="Search">
-      <h4>Search</h4>
       <section class="section-1">
         <PostLists />
       </section>
       <section class="search">
-        <div class="seach-bar"></div>
+        <!-- <div class="seach-bar"></div> -->
         <div class="seach-cards">
           <CardFull
             class="card-full"
@@ -62,6 +61,7 @@ query ($page: Int) {
         timeToRead
         path
         cover_img ( blur: 60)
+        author
       }
     }
   }
@@ -69,8 +69,8 @@ query ($page: Int) {
 </static-query>
 
 
-
-
-
 <style lang="scss" scoped>
+.search {
+  margin-top: 30px;
+}
 </style>

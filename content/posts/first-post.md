@@ -1,7 +1,7 @@
 ---
 title: First Post
 tags: ["vue", "graphql"]
-types: ["Article"]
+types: ["article"]
 postDate: 2019-08-07
 updateDate: null
 author: Night Apple

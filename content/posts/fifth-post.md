@@ -1,12 +1,12 @@
 ---
-title: Third Post
-tags: ["vue", "graphql"]
-types: ["video"]
-postDate: 2019-08-07
+title: Scss prest snippet
+tags: ["scss", "css"]
+types: ["snippet"]
+postDate: 2019-08-15
 updateDate: null
 author: Night Apple
 excerpt: "Cupcake ipsum dolor sit amet cake caramels cookie. Jelly-o donut I love dragée. Sugar plum dessert cake."
-cover_img: "../images/3/cover.jpg"
+cover_img: "../images/1/cover.jpg"
 ---
 
 Cupcake ipsum dolor sit amet cake caramels cookie. Jelly-o donut I love dragée. Sugar plum dessert cake. Danish candy cake toffee oat cake lollipop liquorice I love lollipop. Cotton candy sweet roll halvah soufflé I love pudding. Bear claw candy tiramisu I love sugar plum muffin. Tiramisu muffin chocolate cake danish tootsie roll toffee chocolate cake pudding.

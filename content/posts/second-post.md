@@ -1,7 +1,7 @@
 ---
 title: Second Post
 tags: ["vue", "gridsome"]
-types: ["Guide"]
+types: ["guide"]
 postDate: 2019-08-08
 updateDate: 2019-08-10
 author: Night Apple
