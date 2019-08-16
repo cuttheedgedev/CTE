@@ -1,6 +1,6 @@
 <template>
   <div class="main-btn-border">
-    <div class="main-btn" :class="btnBG ? 'red upcase': 'red' ">
+    <div class="main-btn" :class="btnBG ? 'red' : red ">
       <span class="main-btn-link" :class="btnBG ? 'upcase': red ">{{btnText}}</span>
     </div>
   </div>

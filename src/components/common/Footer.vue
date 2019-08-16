@@ -1,45 +1,47 @@
 <template>
-  <div class="footer">
-    <div class="footer-holder">
-      <div class="footer-holder-back-bg" />
-      <div class="footer-holder-front-bg" />
-    </div>
-    <Subscribe class="high-z" />
+  <div class="re-frame">
+    <div class="footer">
+      <div class="footer-bg-holder">
+        <div class="footer-bg-holder-back-bg" />
+        <div class="footer-bg-holder-front-bg" />
+      </div>
+      <Subscribe />
 
-    <g-link class="footer-logo" to="/">CutTheEdge</g-link>
-    <div class="high-z footer-frame">
-      <div>
-        <h4 class="white">About</h4>
-        <ul class="footer-center-txt">
-          <li>FAQ's</li>
-          <li>Resources</li>
-          <li>Activity</li>
-          <li>RoadMap</li>
-        </ul>
+      <g-link class="footer-logo" to="/">CutTheEdge</g-link>
+      <div class="high-z footer-frame">
+        <div>
+          <h4 class="white">About</h4>
+          <ul class="footer-center-txt">
+            <li>FAQ's</li>
+            <li>Resources</li>
+            <li>Activity</li>
+            <li>RoadMap</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="white">Legal</h4>
+          <ul class="footer-center-txt">
+            <li>Terms of Use</li>
+            <li>Terms Of Subscription</li>
+            <li>Privacy Policy</li>
+            <li>Report An Infraction</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="white">Contact</h4>
+          <ul class="footer-center-txt">
+            <li>Email</li>
+            <li>Instagram</li>
+            <li>Discord</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h4 class="white">Legal</h4>
-        <ul class="footer-center-txt">
-          <li>Terms of Use</li>
-          <li>Terms Of Subscription</li>
-          <li>Privacy Policy</li>
-          <li>Report An Infraction</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="white">Contact</h4>
-        <ul class="footer-center-txt">
-          <li>Email</li>
-          <li>Instagram</li>
-          <li>Discord</li>
-          <li>Twitter</li>
-        </ul>
-      </div>
-    </div>
 
-    <div
-      class="footer-lastline"
-    >Copyright © 2019 by CutTheEdge.Dev | All Rights Reserved | < coded/> with <3 by CutTheEdge.Dev</div>
+      <div
+        class="footer-lastline"
+      >Copyright © 2019 by CutTheEdge.Dev | All Rights Reserved | < coded/> with <3 by CutTheEdge.Dev</div>
+    </div>
   </div>
 </template>
 
@@ -73,11 +75,11 @@ export default {
   margin-top: 100px;
 }
 
-.footer-holder {
+.footer-bg-holder {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -10%);
-  height: 500px;
+  height: 520px;
   width: 100%;
   overflow: hidden;
   z-index: 10;
@@ -85,15 +87,13 @@ export default {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 1200px;
-    height: 1200px;
+    min-width: 1200px;
+    width: 100%;
+    min-height: 1200px;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 600px;
     z-index: 11;
-
-    // position: fixed;
-    // bottom: 0px;
-    // z-index: 20;
   }
   &-front-bg {
     position: absolute;
@@ -129,6 +129,7 @@ export default {
 }
 
 .footer-lastline {
+  margin: 10px auto;
   width: 900px;
   text-align: center;
   position: absolute;

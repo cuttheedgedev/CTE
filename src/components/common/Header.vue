@@ -1,17 +1,19 @@
 <template>
-  <div class="header">
-    <!-- <g-image alt="Logo - Cut The Edge" class="Logo" src="@/assets/images/logo.svg" width="600" /> -->
-    <g-link class="header-logo" to="/">CutTheEdge</g-link>
-    <div class="nav-links">
-      <g-link class="nav-links-items" to="/types/guide">Guides</g-link>
-      <g-link class="nav-links-items" to="/types/article">Articles</g-link>
-      <g-link class="nav-links-items" to="/types/video">Videos</g-link>
-      <g-link class="nav-links-items" to="/types/snippet">Snippets</g-link>
-    </div>
-    <div class="nav-search-bar">
-      <g-link to="/Search">
-        <MainBTN btnText="Seach" />
-      </g-link>
+  <div class="re-frame frame-1">
+    <div class="header">
+      <!-- <g-image alt="Logo - Cut The Edge" class="Logo" src="@/assets/images/logo.svg" width="600" /> -->
+      <g-link class="header-logo" to="/">CutTheEdge</g-link>
+      <div class="nav-links">
+        <g-link class="nav-links-items" to="/types/guide">Guides</g-link>
+        <g-link class="nav-links-items" to="/types/article">Articles</g-link>
+        <g-link class="nav-links-items" to="/types/video">Videos</g-link>
+        <g-link class="nav-links-items" to="/types/snippet">Snippets</g-link>
+      </div>
+      <div class="nav-search-bar">
+        <g-link to="/Search">
+          <MainBTN btnText="Seach" />
+        </g-link>
+      </div>
     </div>
   </div>
 </template>
@@ -28,14 +30,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.re-frame.frame-1 {
+  top: -35px;
+}
+
 .header {
   z-index: 15;
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 70%;
-  min-width: 900px;
+  // top: -30px;
   height: 70px;
   background: white;
   padding: 15px;

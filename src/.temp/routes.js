@@ -4,18 +4,14 @@ export default [
     component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\Projects\\CTE\\Live\\src\\pages\\About.vue")
   },
   {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\Projects\\CTE\\Live\\src\\pages\\Index.vue")
-  },
-  {
-    path: "/test",
-    component: () => import(/* webpackChunkName: "page--src-pages-test-vue" */ "D:\\Projects\\CTE\\Live\\src\\pages\\test.vue")
-  },
-  {
     name: "404",
     path: "/404",
     component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\Projects\\CTE\\Live\\src\\pages\\404.vue")
+  },
+  {
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\Projects\\CTE\\Live\\src\\pages\\Index.vue")
   },
   {
     path: "/search",

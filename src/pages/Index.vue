@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="hero">
+    <section class="section-1">
       <div class="hero-content">
         <h1 class="blue">
           We Experiment
@@ -30,9 +30,11 @@
           <div class="hero-dataPopulation-title">Videos</div>
         </div>
       </div>
+      <!-- <div class="re-frame"> -->
       <div class="hero-img">
         <g-image alt="image" src="@/assets/images/hero_bg.png" />
       </div>
+      <!-- </div> -->
     </section>
     <section class="section-2">
       <div class="section-2-title">
@@ -80,7 +82,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $mainC: #3f61bb;
 $contrastC: #c34223;
 .home-links a {
@@ -89,17 +91,13 @@ $contrastC: #c34223;
 
 .hero-img {
   position: absolute;
-  top: 57px;
-  right: 27px;
-  z-index: 5;
-  width: 60%;
-  max-width: 900px;
+  top: -3px;
+  right: calc(0% - 3px);
+  border-radius: 0 50px 0 0;
+  z-index: -1;
+  width: 50%;
 }
 
-.hero {
-  height: calc(100vh - 120px);
-  padding: 15% 0 0 0;
-}
 .hero-dataPopulation {
   margin-top: 27px;
   margin-left: 60px;
@@ -122,6 +120,11 @@ $contrastC: #c34223;
   }
 }
 
+.section-1 {
+  height: 480px;
+  padding: 5% 0 0 0;
+}
+
 .section-2-shout {
   margin-top: 20px;
 }
@@ -132,5 +135,36 @@ $contrastC: #c34223;
 
 .section-3-postRow {
   margin-top: 30px;
+}
+
+// Media Queries
+
+@media only screen and (min-width: 1024px) {
+  .hero-img {
+    width: 65%;
+  }
+  .section-1 {
+    height: 600px;
+    padding: 18% 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section-1 {
+    height: 100vh;
+    padding: 25% 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hero-img {
+    width: auto;
+  }
+  .section-1 {
+    padding: 17% 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
 }
 </style>

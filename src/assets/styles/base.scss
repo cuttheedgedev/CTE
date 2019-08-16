@@ -1,6 +1,10 @@
 //  Setup
-html {
+html,
+body {
     box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 *,
@@ -9,16 +13,16 @@ html {
     box-sizing: inherit;
 }
 
+
+
+
+
+
+
+
 //Global
 body {
-    background:
-        url("~@/assets/images/primary_bg.png") repeat top left,
-        linear-gradient((180deg,
-                rgba(75, 97, 154, .55) 0%,
-                rgba(75, 97, 154, .45) 100%)), ;
-    background-size: 250px;
     font-family: futura-pt, sans-serif;
-
 }
 
 img {

@@ -27,6 +27,13 @@ module.exports = {
             route: '/types/:id',
             create: true
           },
+        },
+        remark: {
+          plugins: [
+            ['gridsome-plugin-remark-youtube'],
+            ['gridsome-plugin-remark-shiki', { theme: 'nord' }],
+            ['gridsome-plugin-remark-twitter']
+          ]
         }
       }
     }
