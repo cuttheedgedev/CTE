@@ -36,8 +36,6 @@ export default {
     box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
     // Testing
     padding: 60px 30px 570px 30px;
-    // overflow: hidden;
-    height: calc(auto + 500px);
   }
 }
 </style>
