@@ -33,8 +33,7 @@ query ($id: String!) {
         updateDate (format: "Do MMM YYYY")
         author
         excerpt
-        content
-        timeToRead
+      
         path
           }
         }

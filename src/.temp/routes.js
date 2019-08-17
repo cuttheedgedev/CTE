@@ -21,21 +21,21 @@ export default [
     path: "/Search/:slug",
     component: () => import(/* webpackChunkName: "page--src-templates-post-vue" */ "D:\\Projects\\CTE\\Live\\src\\templates\\Post.vue"),
     meta: {
-      data: true
+      data: () => import(/* webpackChunkName: "page--src-templates-post-vue" */ "D:\\Projects\\CTE\\Live\\.cache\\data\\route-meta\\0.json")
     }
   },
   {
     path: "/tags/:id",
     component: () => import(/* webpackChunkName: "page--src-templates-tags-vue" */ "D:\\Projects\\CTE\\Live\\src\\templates\\Tags.vue"),
     meta: {
-      data: true
+      data: () => import(/* webpackChunkName: "page--src-templates-tags-vue" */ "D:\\Projects\\CTE\\Live\\.cache\\data\\route-meta\\1.json")
     }
   },
   {
     path: "/types/:id",
     component: () => import(/* webpackChunkName: "page--src-templates-types-vue" */ "D:\\Projects\\CTE\\Live\\src\\templates\\Types.vue"),
     meta: {
-      data: true
+      data: () => import(/* webpackChunkName: "page--src-templates-types-vue" */ "D:\\Projects\\CTE\\Live\\.cache\\data\\route-meta\\2.json")
     }
   },
   {

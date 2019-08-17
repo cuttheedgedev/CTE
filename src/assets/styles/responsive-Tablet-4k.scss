@@ -2,10 +2,7 @@ $tablet : 768px;
 $s-laptop : 1024px;
 $m-laptop : 1400px;
 $l-laptop : 1920px;
-$k4 : 2560px;
-
-
-
+$xl-4k : 2560px;
 
 body {
 
@@ -26,7 +23,7 @@ body {
 
 .re-frame {
     position: absolute;
-    width: calc(100vw - 20px);
+    width: 100vw;
     left: 50%;
     transform: translate(-50%, 0);
 }

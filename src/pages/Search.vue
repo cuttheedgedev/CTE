@@ -39,7 +39,7 @@ export default {
 
 <static-query>
 query ($page: Int) {
-  allPost (perPage: 2, page: $page) @paginate {
+  allPost (perPage: 4, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -58,7 +58,7 @@ query ($page: Int) {
           id
           path
         }
-        timeToRead
+          
         path
         cover_img ( blur: 60)
         author

@@ -35,7 +35,7 @@ export default {
     -moz-box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.35);
     // Testing
-    padding: 60px 30px 570px 30px;
+    padding: 60px 30px 567px 30px;
   }
 }
 </style>

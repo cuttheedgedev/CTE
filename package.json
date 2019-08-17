@@ -7,14 +7,17 @@
 		"explore": "gridsome explore"
 	},
 	"dependencies": {
+		"@gridsome/remark-prismjs": "^0.1.0",
 		"@gridsome/source-filesystem": "^0.5.0",
 		"@gridsome/transformer-remark": "^0.3.2",
 		"gridsome": "^0.6.0",
 		"gridsome-plugin-algolia": "^2.1.1",
-		"gridsome-plugin-remark-shiki": "^0.3.0",
 		"gridsome-plugin-remark-twitter": "^0.1.2",
 		"gridsome-plugin-remark-youtube": "^1.0.1",
-		"vue-disqus": "^3.0.5"
+		"prismjs": "^1.17.1",
+		"update": "^0.7.4",
+		"vue-disqus": "^3.0.5",
+		"vue-prism-component": "^1.1.1"
 	},
 	"devDependencies": {
 		"node-sass": "^4.12.0",

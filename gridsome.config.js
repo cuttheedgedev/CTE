@@ -31,11 +31,12 @@ module.exports = {
         remark: {
           plugins: [
             ['gridsome-plugin-remark-youtube'],
-            ['gridsome-plugin-remark-shiki', { theme: 'nord' }],
+            '@gridsome/remark-prismjs'
             ['gridsome-plugin-remark-twitter']
           ]
         }
       }
     }
   ]
+
 }

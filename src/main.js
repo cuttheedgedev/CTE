@@ -6,7 +6,6 @@ import VueDisqus from 'vue-disqus'
 
 import './assets/styles/import.scss'
 
-
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   head.link.push({

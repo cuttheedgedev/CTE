@@ -8,46 +8,22 @@
         <div class="card-full-taxonomies">
           <g-link
             class="card-full-taxonomis-type"
-            :to="type.path"
             v-for="(type, index) in cardData.types"
             :key="index"
+            :to="type.path"
           >
             <MainBTN :btnText="'#'+type.id +'s'" btnBG="red" />
           </g-link>
           <g-link
             class="card-full-taxonomies-tag"
-            :to="tag.path"
             v-for="(tag, index) in cardData.tags"
             :key="index"
+            :to="tag.path"
           >
             <MainBTN :btnText="'#'+tag.id" />
           </g-link>
         </div>
-
-        <div class="card-full-authCard">
-          <div class="card-full-authCard-authframe">
-            <div v-if="cardData.author='NightApple'">
-              <g-image
-                src="@/assets/images/auther_profile_nightapple.jpg"
-                class="card-full-authCard-img"
-                width="120"
-                hight="120"
-              />
-            </div>
-          </div>
-          <div class="card-full-authCard-info">
-            <p class="white italic" v-if="cardData.timeToRead > 1">{{cardData.timeToRead}} mins read</p>
-            <p class="white italic" v-else>{{cardData.timeToRead}} min read</p>
-            <!-- <div v-if="cardData.updateDate != null ">edited</div> -->
-
-            <div class="spacer-1">
-              <p class="white italic">
-                <span class="accentOff">by</span>
-                {{cardData.author}} | {{cardData.postDate}}
-              </p>
-            </div>
-          </div>
-        </div>
+        <CardMicro :cardData="cardData" />
       </div>
     </div>
   </g-link>
@@ -55,11 +31,14 @@
 
 <script>
 import MainBTN from "@/components/MainBTN.vue";
+import CardMicro from "@/components/microComponents/CardMicro.vue";
+
 export default {
   name: "cardFull",
   props: ["cardData"],
   components: {
-    MainBTN
+    MainBTN,
+    CardMicro
   }
 };
 </script>
@@ -67,12 +46,11 @@ export default {
 <style lang="scss" scoped >
 .card-full {
   text-decoration: none;
-
   &-frame {
     margin-bottom: 120px;
     width: 100%;
     display: grid;
-    width: 900px;
+    width: 93%;
     grid: auto / 30% 70%;
     position: relative;
     left: 50%;
@@ -103,7 +81,6 @@ export default {
     font-size: 1.75rem;
     color: #3f61bb;
   }
-
   &-excerpt {
     margin-top: 15px;
     font-size: 1.2rem;
@@ -116,49 +93,6 @@ export default {
     display: grid;
     grid: 52px / repeat(6, auto);
     grid-gap: 10px;
-  }
-  &-authCard {
-    margin-top: 15px;
-    width: 345px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 15px;
-    border-radius: 20px;
-    position: absolute;
-    -webkit-box-shadow: 0px 0 60px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0 60px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0 60px 0px rgba(0, 0, 0, 0.2);
-
-    &-authframe {
-      height: 100px;
-      width: 100px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 15px;
-      border-radius: 20px;
-      position: absolute;
-      transform: translate(-15px, -15px);
-      -webkit-box-shadow: 0px 0 30px 0px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 0px 0 30px 0px rgba(0, 0, 0, 0.4);
-      box-shadow: 0px 0 30px 0px rgba(0, 0, 0, 0.4);
-    }
-    &-img {
-      border-radius: 12px;
-    }
-    &-info {
-      background-color: rgba(31, 56, 146, 0.75);
-      padding: 15px 10px 10px 100px;
-      border-radius: 12px;
-    }
-    & p {
-      font-size: 1.2rem;
-    }
-  }
-}
-
-.spacer-1 {
-  margin-top: 7px;
-  & p {
-    font-size: 0.9rem;
   }
 }
 </style>

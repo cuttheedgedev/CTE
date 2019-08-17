@@ -14,12 +14,6 @@ body {
 }
 
 
-
-
-
-
-
-
 //Global
 body {
     font-family: futura-pt, sans-serif;
@@ -36,6 +30,11 @@ img {
 
 .grecaptcha-badge {
     display: none;
+}
+
+// Gridsome Clean up
+a:-webkit-any-link {
+    text-decoration: none !important;
 }
 
 // Vars
