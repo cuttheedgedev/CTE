@@ -10,8 +10,8 @@
         <g-link class="nav-links-items" to="/types/snippet">Snippets</g-link>
       </div>
       <div class="nav-search-bar">
-        <g-link to="/Search">
-          <MainBTN btnText="Seach" />
+        <g-link to="/blog">
+          <MainBTN btnText="Blog Posts" />
         </g-link>
       </div>
     </div>

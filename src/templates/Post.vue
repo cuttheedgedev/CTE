@@ -64,15 +64,12 @@ query ($path: String!) {
 import CardMicro from "@/components/microComponents/CardMicro.vue";
 import MainBTN from "@/components/MainBTN.vue";
 
-
 import "prismjs/themes/prism.css";
-
 
 export default {
   components: {
     CardMicro,
-    MainBTN,
-  
+    MainBTN
   }
 };
 </script>
@@ -116,18 +113,22 @@ export default {
   margin-top: 60px;
 }
 
-.page-content p {
-  margin-top: 20px !important;
-  font-size: 21px;
-  line-height: 23px;
-}
-
-.page-content pre {
-    margin-top: 20px;
+.page-content {
+  & p {
+    margin: 1.2em;
+    font-size: 21px;
+    line-height: 23px;
+  }
+  & pre {
+    margin: 1.2em 2.4em;
     background-color: #ffffff82;
     padding: 50px;
     border-radius: 50px;
-
+  }
+  & b {
+    background-color: #ffffff82;
+    padding: 0 5px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

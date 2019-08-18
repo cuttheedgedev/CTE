@@ -14,7 +14,7 @@ module.exports = {
       options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
-        route: '/Search/:slug',
+        route: '/blog/:slug',
         refs: {
           // author: 'Author',
           tags: {
